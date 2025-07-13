@@ -39,6 +39,30 @@ a:hover {
   font-size: 1.125rem;
 }
 
+.title {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.rating,
+.runtime,
+.genre,
+.add-btn {
+  font-size: 0.75rem;
+}
+
+.rating {
+  padding-top: 2px;
+}
+
+.plot {
+  font-size: 0.875rem;
+  text-align: left;
+  line-height: 1.25rem;
+  color: #a5a5a5;
+}
+
 /* ----- LAYOUT ----- */
 
 main,
@@ -56,7 +80,7 @@ main,
 
 header,
 main {
-  padding: 3.75em 2.75em;
+  padding: 2.25em 2.75em;
 }
 
 main {
@@ -119,4 +143,57 @@ input {
 
 .movies {
   text-align: center;
+}
+
+.movie-card,
+.movie-heading,
+.movie-details,
+.add-btn,
+.movie-info {
+  display: flex;
+}
+
+.movie-card,
+.movie-heading,
+.movie-details,
+.add-btn {
+  align-items: center;
+}
+
+.movie-info {
+  flex-direction: column;
+  gap: 8px;
+}
+
+.movie-card {
+  gap: 20px;
+  padding: 25px 0;
+  border-bottom: 1.5px solid #2c2c2c;
+}
+
+.movie-heading {
+  gap: 4px;
+}
+
+.movie-details {
+  gap: 18px;
+}
+
+.poster > img {
+  width: 100px
+}
+
+.star {
+  width: 15px;
+}
+
+.add-btn {
+  background: none;
+  color: white;
+  border: none;
+  gap: 5px;
+}
+
+.add-btn > img {
+  width: 16px;
 }

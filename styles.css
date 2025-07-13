@@ -12,6 +12,10 @@ body {
   color: white;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* ----- TYPOGRAPHY ----- */
 
 h1, p {
@@ -33,16 +37,21 @@ a:hover {
   opacity: 0.5;
 }
 
-.exploring {
-  color: #2e2e2f;
+.exploring,
+.empty {
   font-weight: bold;
   font-size: 1.125rem;
+}
+
+.exploring {
+  color: #2e2e2f;
 }
 
 .title {
   margin: 0;
   font-size: 1.125rem;
   font-weight: 500;
+  text-align: left;
 }
 
 .rating,
@@ -63,6 +72,11 @@ a:hover {
   color: #a5a5a5;
 }
 
+.empty {
+  color: #787878;
+  margin-bottom: 15px;
+}
+
 /* ----- LAYOUT ----- */
 
 main,
@@ -72,7 +86,6 @@ main,
 }
 
 .content {
-  background-color: #121212;
   width: 550px;
   height: 100vh;
   margin: 0 auto;
@@ -86,11 +99,12 @@ main {
 main {
   justify-content: center;
   align-items: center;
-  position: relative;
+  background-color: #121212;
   flex-grow: 1;
 }
 
 header {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,7 +121,7 @@ header {
 
 .search {
   position: absolute;
-  top: -19px;
+  bottom: -19px;
   display: flex;
   align-items: center;
 }
@@ -149,14 +163,16 @@ input {
 .movie-heading,
 .movie-details,
 .add-btn,
-.movie-info {
+.movie-info,
+.add-link {
   display: flex;
 }
 
 .movie-card,
 .movie-heading,
 .movie-details,
-.add-btn {
+.add-btn,
+.add-link {
   align-items: center;
 }
 
@@ -188,12 +204,14 @@ input {
 }
 
 .add-btn {
-  background: none;
-  color: white;
-  border: none;
   gap: 5px;
 }
 
-.add-btn > img {
+.add-icon {
   width: 16px;
+}
+
+.add-link {
+  justify-content: center;
+  gap: 7px;
 }

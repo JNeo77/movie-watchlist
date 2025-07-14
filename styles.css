@@ -57,7 +57,7 @@ a:hover {
 .rating,
 .runtime,
 .genre,
-.add-btn {
+.btn-text {
   font-size: 0.75rem;
 }
 
@@ -162,7 +162,7 @@ input {
 .movie-card,
 .movie-heading,
 .movie-details,
-.add-btn,
+.btn-wrap,
 .movie-info,
 .add-link {
   display: flex;
@@ -171,7 +171,7 @@ input {
 .movie-card,
 .movie-heading,
 .movie-details,
-.add-btn,
+.btn-wrap,
 .add-link {
   align-items: center;
 }
@@ -203,12 +203,25 @@ input {
   width: 15px;
 }
 
-.add-btn {
-  gap: 5px;
+.add-btn,
+.remove-btn {
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: none;
 }
 
-.add-icon {
-  width: 16px;
+.add-btn {
+  background-image: url('img/add-icon.svg');
+}
+
+.remove-btn {
+  background-image: url('img/remove-icon.svg');
+}
+
+.btn-wrap {
+  gap: 5px;
 }
 
 .add-link {

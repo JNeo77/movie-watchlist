@@ -8,11 +8,11 @@ document.getElementById('search-btn').addEventListener('click', () => {
   movies = []
   const searchTerm = document.getElementById('search-input').value
   if (searchTerm) {
-    fetch(`http://www.omdbapi.com/?s=${searchTerm}&apikey=27b6d429`)
+    fetch(`https://www.omdbapi.com/?s=${searchTerm}&apikey=27b6d429`)
       .then(res => res.json())
       .then(data => { 
         searchResults = data.Search.map(movie => {
-          return fetch(`http://www.omdbapi.com/?i=${movie.imdbID}&apikey=27b6d429`)
+          return fetch(`https://www.omdbapi.com/?i=${movie.imdbID}&apikey=27b6d429`)
         })
         render()
       })
